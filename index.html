@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Currency-convertor" />
+    <meta name="description" content="USD change convert" />
+    <meta name="author" content="Zenfira Javadova" />
+    <title>Currency-convertor</title>
+    <link rel="stylesheet" href="./convert.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="currency-container">
+        <div class="header-container">
+          <h1>Currency Converter</h1>
+          <p>
+            Check live rates, set rate alerts, receive notifications and more.
+          </p>
+        </div>
+        <div class="convertor-container">
+          <p>Amount</p>
+          <div class="amount-container">
+            <img src="https://flagcdn.com/w80/us.png" alt="flag" />
+            <select name="" id="" class="currency" onchange="loadFlag(this)">
+              <!-- <option value="">Usa</option>
+              <option value="">Aze</option>
+              <option value="">Aze</option>
+              <option value="">Aze</option> -->
+            </select>
+            <input type="number" name="" id="amount" />
+          </div>
+
+          <img src="./assets/exchange.png" alt="" class="change" />
+
+          <p>Converted Amount</p>
+
+          <div class="amount-container">
+            <img src="https://flagcdn.com/w80/tr.png" alt="flag" />
+            <select name="" id="" class="currency" onchange="loadFlag(this)">
+              <!-- <option value="">Tur</option>
+              <option value="">Tur</option>
+              <option value="">Tur</option> -->
+            </select>
+            <input type="number" name="" id="exchange-rate" />
+          </div>
+        </div>
+        <div class="exchange">
+          <p>Indicative Exchange Rate</p>
+          <h4 id="exchange-value"></h4>
+        </div>
+      </div>
+    </section>
+    <script src="./convert.js"></script>
+  </body>
+</html>
